@@ -66,10 +66,11 @@ model VerificationToken {
 }
 
 model posts{
+    id  String    @id @default(cuid())
     header String
     datePub DateTime
     subHeader String
     mainImage String
-    body: String
+    body String
 
 }
